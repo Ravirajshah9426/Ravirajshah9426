@@ -45,11 +45,11 @@ void loop(void)
   data=100-((data1/1024)*100);
   if (data>=70)
   {
-  Serial.println("soil is good,no water needed");
+  Serial.println("No water needed,light needed");
   }
   else
   {
-  Serial.println("Need to water");
+  Serial.println("Need to water,light is good");
   }
   delay(1000);
   server.handleClient();
